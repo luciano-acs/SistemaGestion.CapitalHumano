@@ -21,21 +21,20 @@
                     <ul>
                         <li><a href="#">Empleados</a>
                             <ul>
-                                <li><a href="#" id="boton">Gestion</a></li>
+                                <li><a href="#" id="registro">Gestión</a></li>
                                 <li><a href="#">Liquidación</a></li>
                             </ul>
                         </li>
-                        <li><a href="#">ITEM 2</a>
+                        <li><a href="#">Personas</a>
                             <ul>
-                                <li><a href="#">ITEM 5</a></li>
-                                <li><a href="#">ITEM 6</a></li>
+                                <li><a href="#">Gestión</a></li>
+                                <li><a href="#">Postulaciones</a></li>
                             </ul>
                         </li>
-                        <li><a href="#">ITEM 3</a>
+                        <li><a href="#">Capacitación</a>
                             <ul>
-                                <li><a href="#">ITEM 4</a></li>
-                                <li><a href="#">ITEM 5</a></li>
-                                <li><a href="#">ITEM 6</a></li>
+                                <li><a href="#">Consulta</a></li>
+                                <li><a href="#">Crear capacitación</a></li>
                             </ul>
                         </li>
                     </ul>                
@@ -52,10 +51,12 @@
                 <label for="">Dni <input type="text" required></label>
                 <label for="">Provincia 
                     <select id="provincia" required>
+                        <option value="0">Seleccione una provincia</option>
                     </select>
                 </label>
-                <label for="">Ciudad 
-                    <select name="ciudad" id="ciudad" required>                        
+                <label for="">Localidad 
+                    <select name="localidad" id="localidad" required>
+                        <option name="OPTION" value="0" id="primero">Seleccione una localidad</option>  
                     </select>
                 </label>                
                 <label for="">Dirección <input type="text" required></label>
@@ -63,7 +64,7 @@
                 <label for="">Fecha de nacimiento <input type="date" required></label>
                 <label for="">Email <input type="email" required></label>
                 <label for="">Contraseña <input type="password" required></label>
-                <label for="">Fecha de ingreso <input type="date" required></label>
+                <label for="">Fecha de ingreso <input type="date" disabled="true" required></label>
                 <label for="">Fecha de egreso <input type="date" disabled="true"></label>
                 <button type="submit">Enviar</button>
             </form>                
